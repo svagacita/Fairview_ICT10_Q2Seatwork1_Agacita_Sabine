@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prata&display=swap" rel="stylesheet">
+
+    <title>SW#2</title>
+
+    <style>
+         
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 30px 20px;
+        font-family: 'Poppins', sans-serif;
+        background:
+            radial-gradient(circle at top left, #f4cd58, transparent 40%),
+            linear-gradient(135deg, #f5e6d3, #fdd4bb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #verifitcation_system {
+        width: 100%;
+        max-width: 460px;
+        padding: 35px;
+        background: rgba(255, 250, 245, 0.92);
+        border: 1px solid #dd92ad;
+        border-radius: 18px;
+        box-shadow: 0 15px 40px rgba(139, 94, 60, 0.15);
+        position: relative;
+        overflow: hidden;
+    }
+
+    
+
+    h1 {
+        text-align: center;
+        color: #8b5e3c;
+        font-family: 'Prata', serif;
+        font-weight: normal;
+        line-height: 1.3;
+        margin: 0 0 12px;
+    
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2 {
+        text-align: center;
+        color: #f4cd58;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0 0 30px;
+    }
+
+    label {
+        display: block;
+        color: #8b5e3c;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 18px 0 8px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 13px 15px;
+        border: 1px solid #e3cbbb;
+        border-radius: 9px;
+        background-color: #fffdf9;
+        color: #503b32;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+        border-color: #dd92ad;
+        box-shadow: 0 0 0 3px rgba(221, 146, 173, 0.18);
+    }
+
+    input::placeholder {
+        color: #b6a49a;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 25px;
+        padding: 14px;
+        background: #f4cd58;
+        color: white;
+        border: none;
+        border-radius: 9px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.25s;
+    }
+
+    button:hover {
+        background: #8b5e3c;
+        box-shadow: 0 5px 15px rgba(201, 120, 150, 0.25);
+     
+    }
+
+    #result {
+        border-top: 1px solid #ead4c6;
+        margin-top: 28px;
+        padding-top: 20px;
+        text-align: center;
+        min-height: 45px;
+    } 
+
+    
+
+   
+</style>
+
+
+    
+</head>
+<body>
+
+      <div id="verifitcation_system">
+
+        
+         <h1>Social Science Club Checker</h1>
+         <h2>Candidate Verification System</h2>
+       
+
+         <label for="fname">FIRST NAME</label>
+        <input type="text" id="fname" placeholder="Enter your first name">
+
+        <label for="lname">LAST NAME</label>
+        <input type="text" id="lname" placeholder="Enter your last name">
+
+        <button py-click="verify">
+            Verify Member
+        </button>
+
+
+        <div id="result">
+            <br>
+            <br>
+             © 2026 <strong>Social Science Club</strong> · Seatwork 2 · 2nd Quarter
+</footer>
+
+
+    
+
+        </div>
+        
+    </div>
+<footer>
+   
+
+     <script type="py" src="main.py"></script>
+    
+</body>
+</html>
